@@ -40,25 +40,27 @@ public class Board {
         }
     }
 
+
+    private List<BoardValidSlice> initializeListOfValidSlice(int size) {
+        List<BoardValidSlice> result = new ArrayList<>(size);
+        for (int i = 0; i< size; i++) {
+            result.add(new BoardValidSlice());
+        }
+        return result;
+    }
+
     public List<BoardValidSlice> slice() {
         List<BoardValidSlice> slices = new ArrayList<>();
+        List<BoardValidSlice> rowSlices = initializeListOfValidSlice(this.rows);
+        List<BoardValidSlice> columnSlices = initializeListOfValidSlice(this.columns);
+        slices.addAll(rowSlices);
+        slices.addAll(columnSlices);
 
-        //tie all the rows possibilities
         for (int i = 0; i < rows; i++) {
-            BoardValidSlice rowSlice = new BoardValidSlice();
             for (int j = 0; j < columns; j++) {
-                rowSlice.add(boardPieces[i][j]);
+                rowSlices.get(i).add(boardPieces[i][j]);
+                columnSlices.get(j).add(boardPieces[i][j]);
             }
-            slices.add(rowSlice);
-        }
-
-        //tie all the columns possibilities
-        for (int i = 0; i < columns; i++) {
-            BoardValidSlice columnSlice = new BoardValidSlice();
-            for (int j = 0; j < rows; j++) {
-                columnSlice.add(boardPieces[j][i]);
-            }
-            slices.add(columnSlice);
         }
 
         //tie the diagonal possibilities
@@ -84,20 +86,22 @@ public class Board {
 
 
     public static void main(String args[]) {
-        Board board = new Board(3,3);
-        board.select(new Player("a"), 0, 0);
-        board.select(new Player("a"), 0, 1);
-        board.select(new Player("a"), 0, 2);
+        Board board = new Board(3,4);
+        board.select(new Player("a1"), 0, 0);
+        board.select(new Player("a2"), 0, 1);
+        board.select(new Player("a3"), 0, 2);
         board.select(new Player("b1"), 1, 0);
-        board.select(new Player("a1"), 1, 1);
+        board.select(new Player("b2"), 1, 1);
         board.select(new Player("b3"), 1, 2);
         board.select(new Player("c1"), 2, 0);
         board.select(new Player("c2"), 2, 1);
-        board.select(new Player("a1"), 2, 2);
+        board.select(new Player("c3"), 2, 2);
 
         board.print();
 
         List<BoardValidSlice> slices = board.slice();
+
+
 
         for (BoardValidSlice slice: slices) {
             System.out.println(slice.hasWinner());
