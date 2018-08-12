@@ -98,9 +98,6 @@ public class Playfield {
     }
 
     public Player getWinner() {
-        if (!hasWinner()) {
-            throw new IllegalStateException("There´s no winner.");
-        }
         for (Path path : this.paths) {
             if (path.hasWinner()) {
                 return path.getFields().get(0).getAssigned();

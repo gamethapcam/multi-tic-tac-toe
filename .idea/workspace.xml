@@ -3,10 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="af8f0392-f8ab-47bb-90ff-ac3546b5d3da" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build.gradle" afterPath="$PROJECT_DIR$/build.gradle" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/robson/games/tictactoe/ui/TicTacToe.java" afterPath="$PROJECT_DIR$/src/main/java/robson/games/tictactoe/ui/TicTacToe.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/config.properties" afterPath="$PROJECT_DIR$/src/main/resources/config.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/robson/games/tictactoe/model/Playfield.java" afterPath="$PROJECT_DIR$/src/main/java/robson/games/tictactoe/model/Playfield.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/robson/games/tictactoe/model/PathTest.java" afterPath="$PROJECT_DIR$/src/test/java/robson/games/tictactoe/model/PathTest.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -74,7 +72,25 @@
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
                 <item name="tictactoe" type="f1a62948:ProjectNode" />
                 <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="documentation" type="c8890929:TasksNode$1" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="tictactoe" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="help" type="c8890929:TasksNode$1" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="tictactoe" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
                 <item name="other" type="c8890929:TasksNode$1" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="tictactoe" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="verification" type="c8890929:TasksNode$1" />
               </path>
             </expand>
             <select />
@@ -85,64 +101,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="450">
-      <file leaf-file-name="PlayersManager.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/robson/games/tictactoe/game/PlayersManager.java">
+      <file leaf-file-name="Playfield.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/robson/games/tictactoe/model/Playfield.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-403">
-              <caret line="11" column="27" lean-forward="false" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="27" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/README.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SECOND">
-              <first_editor relative-caret-position="250">
-                <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-                <folding />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TicTacToe.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/robson/games/tictactoe/ui/TicTacToe.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-2">
-              <caret line="99" column="5" lean-forward="false" selection-start-line="99" selection-start-column="5" selection-end-line="99" selection-end-column="5" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="build.gradle" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/build.gradle">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="219">
-              <caret line="20" column="40" lean-forward="false" selection-start-line="20" selection-start-column="40" selection-end-line="20" selection-end-column="40" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="LICENSE" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/LICENSE">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="config.properties" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/config.properties">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="25">
-              <caret line="1" column="16" lean-forward="false" selection-start-line="1" selection-start-column="16" selection-end-line="1" selection-end-column="16" />
+            <state relative-caret-position="975">
+              <caret line="99" column="31" lean-forward="false" selection-start-line="99" selection-start-column="31" selection-end-line="99" selection-end-column="31" />
               <folding />
             </state>
           </provider>
@@ -555,7 +518,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/robson/games/tictactoe/io/OP.java" />
         <option value="$PROJECT_DIR$/src/main/java/robson/games/tictactoe/model/ComputerPlayer.java" />
         <option value="$PROJECT_DIR$/src/main/java/robson/games/tictactoe/utils/ConfigUtils.java" />
         <option value="$PROJECT_DIR$/src/main/java/robson/games/tictactoe/game/AIEngine.java" />
@@ -591,7 +553,6 @@
         <option value="$PROJECT_DIR$/src/main/java/robson/games/tictactoe/io/Config.java" />
         <option value="$PROJECT_DIR$/src/main/java/robson/games/tictactoe/game/PlayersManager.java" />
         <option value="$PROJECT_DIR$/src/main/java/robson/games/tictactoe/model/Field.java" />
-        <option value="$PROJECT_DIR$/src/main/java/robson/games/tictactoe/model/Playfield.java" />
         <option value="$PROJECT_DIR$/src/main/java/robson/games/tictactoe/ui/Printer.java" />
         <option value="$PROJECT_DIR$/src/test/java/robson/games/tictactoe/game/ai/rules/comparators/PathWithFewerFreeFieldsComparatorTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/robson/games/tictactoe/ui/InputValue.java" />
@@ -606,6 +567,8 @@
         <option value="$PROJECT_DIR$/src/main/java/robson/games/tictactoe/ui/TicTacToe.java" />
         <option value="$PROJECT_DIR$/build.gradle" />
         <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/src/test/java/robson/games/tictactoe/model/PathTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/robson/games/tictactoe/model/Playfield.java" />
       </list>
     </option>
   </component>
@@ -671,36 +634,6 @@
               <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="tictactoe" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="tictactoe" type="b2602c69:ProjectViewProjectNode" />
-              <item name="multi-tic-tac-toe" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="tictactoe" type="462c0819:PsiDirectoryNode" />
-              <item name="game" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="tictactoe" type="b2602c69:ProjectViewProjectNode" />
-              <item name="multi-tic-tac-toe" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="tictactoe" type="462c0819:PsiDirectoryNode" />
-              <item name="game" type="462c0819:PsiDirectoryNode" />
-              <item name="ai" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="tictactoe" type="b2602c69:ProjectViewProjectNode" />
-              <item name="multi-tic-tac-toe" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="tictactoe" type="462c0819:PsiDirectoryNode" />
-              <item name="game" type="462c0819:PsiDirectoryNode" />
-              <item name="ai" type="462c0819:PsiDirectoryNode" />
-              <item name="modes" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="tictactoe" type="b2602c69:ProjectViewProjectNode" />
@@ -843,25 +776,24 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Gradle.multi-tic-tac-toe [run]">
-    <configuration name="TicTacToe" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="robson.games.tictactoe.ui.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="MAIN_CLASS_NAME" value="robson.games.tictactoe.ui.TicTacToe" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="tictactoe_main" />
-      <envs />
+  <component name="RunManager" selected="Gradle.multi-tic-tac-toe [test]">
+    <configuration name="PathTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests robson.games.tictactoe.model.PathTest" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":cleanTest" />
+            <option value=":test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
     </configuration>
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="WIDTH" value="400" />
@@ -988,19 +920,19 @@
       </ExternalSystemSettings>
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Application.TicTacToe" />
-      <item index="1" class="java.lang.String" itemvalue="Gradle.multi-tic-tac-toe [test]" />
-      <item index="2" class="java.lang.String" itemvalue="Gradle.multi-tic-tac-toe [run]" />
-      <item index="3" class="java.lang.String" itemvalue="Gradle.multi-tic-tac-toe [play]" />
-      <item index="4" class="java.lang.String" itemvalue="Gradle.multi-tic-tac-toe [clean]" />
+      <item index="0" class="java.lang.String" itemvalue="Gradle.multi-tic-tac-toe [run]" />
+      <item index="1" class="java.lang.String" itemvalue="Gradle.multi-tic-tac-toe [play]" />
+      <item index="2" class="java.lang.String" itemvalue="Gradle.multi-tic-tac-toe [clean]" />
+      <item index="3" class="java.lang.String" itemvalue="Gradle.PathTest" />
+      <item index="4" class="java.lang.String" itemvalue="Gradle.multi-tic-tac-toe [test]" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Gradle.multi-tic-tac-toe [clean]" />
-        <item index="1" class="java.lang.String" itemvalue="Gradle.multi-tic-tac-toe [run]" />
-        <item index="2" class="java.lang.String" itemvalue="Gradle.multi-tic-tac-toe [play]" />
-        <item index="3" class="java.lang.String" itemvalue="Application.TicTacToe" />
-        <item index="4" class="java.lang.String" itemvalue="Gradle.multi-tic-tac-toe [test]" />
+        <item index="0" class="java.lang.String" itemvalue="Gradle.multi-tic-tac-toe [test]" />
+        <item index="1" class="java.lang.String" itemvalue="Gradle.PathTest" />
+        <item index="2" class="java.lang.String" itemvalue="Gradle.multi-tic-tac-toe [clean]" />
+        <item index="3" class="java.lang.String" itemvalue="Gradle.multi-tic-tac-toe [run]" />
+        <item index="4" class="java.lang.String" itemvalue="Gradle.multi-tic-tac-toe [play]" />
       </list>
     </recent_temporary>
   </component>
@@ -1015,7 +947,7 @@
       <option name="presentableId" value="Default" />
       <updated>1533913356264</updated>
       <workItem from="1533913359357" duration="11282000" />
-      <workItem from="1534000222232" duration="45080000" />
+      <workItem from="1534000222232" duration="47034000" />
     </task>
     <task id="LOCAL-00001" summary="improve slice algorithm">
       <created>1534003331569</created>
@@ -1087,43 +1019,50 @@
       <option name="project" value="LOCAL" />
       <updated>1534102591771</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="add usage protocol">
+      <created>1534105432454</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1534105432454</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="DestroySomeoneElseVictoryTest - 2018.08.12 at 15h 49m 55s.xml">
-      <configuration name="DestroySomeoneElseVictoryTest" configurationId="GradleRunConfiguration" />
+    <history-entry file="PathTest - 2018.08.12 at 18h 51m 56s.xml">
+      <configuration name="PathTest" configurationId="GradleRunConfiguration" />
     </history-entry>
-    <history-entry file="DestroySomeoneElseVictoryTest - 2018.08.12 at 15h 51m 32s.xml">
-      <configuration name="DestroySomeoneElseVictoryTest" configurationId="GradleRunConfiguration" />
+    <history-entry file="PathTest - 2018.08.12 at 18h 55m 56s.xml">
+      <configuration name="PathTest" configurationId="GradleRunConfiguration" />
     </history-entry>
-    <history-entry file="TakeARandomFieldTest - 2018.08.12 at 15h 57m 21s.xml">
-      <configuration name="TakeARandomFieldTest" configurationId="GradleRunConfiguration" />
+    <history-entry file="PathTest - 2018.08.12 at 18h 57m 06s.xml">
+      <configuration name="PathTest" configurationId="GradleRunConfiguration" />
     </history-entry>
-    <history-entry file="TakeAnEmptyPathTest - 2018.08.12 at 15h 55m 15s.xml">
-      <configuration name="TakeAnEmptyPathTest" configurationId="GradleRunConfiguration" />
+    <history-entry file="PathTest - 2018.08.12 at 18h 57m 29s.xml">
+      <configuration name="PathTest" configurationId="GradleRunConfiguration" />
     </history-entry>
-    <history-entry file="TakeTheBestPathForMeTest - 2018.08.12 at 16h 03m 27s.xml">
-      <configuration name="TakeTheBestPathForMeTest" configurationId="GradleRunConfiguration" />
+    <history-entry file="PathTest - 2018.08.12 at 18h 59m 14s.xml">
+      <configuration name="PathTest" configurationId="GradleRunConfiguration" />
     </history-entry>
-    <history-entry file="TakeTheBestPathForMeTest - 2018.08.12 at 16h 03m 41s.xml">
-      <configuration name="TakeTheBestPathForMeTest" configurationId="GradleRunConfiguration" />
+    <history-entry file="PathTest - 2018.08.12 at 19h 00m 47s.xml">
+      <configuration name="PathTest" configurationId="GradleRunConfiguration" />
     </history-entry>
-    <history-entry file="TakeTheBestPathOfSomeoneElse - 2018.08.12 at 16h 05m 14s.xml">
-      <configuration name="TakeTheBestPathOfSomeoneElse" configurationId="GradleRunConfiguration" />
+    <history-entry file="PathTest - 2018.08.12 at 19h 01m 07s.xml">
+      <configuration name="PathTest" configurationId="GradleRunConfiguration" />
     </history-entry>
-    <history-entry file="TakeTheBestPathOfSomeoneElseTest - 2018.08.12 at 16h 06m 24s.xml">
-      <configuration name="TakeTheBestPathOfSomeoneElseTest" configurationId="GradleRunConfiguration" />
+    <history-entry file="PathTest - 2018.08.12 at 19h 02m 01s.xml">
+      <configuration name="PathTest" configurationId="GradleRunConfiguration" />
     </history-entry>
-    <history-entry file="WinTheGameTest - 2018.08.12 at 16h 00m 45s.xml">
-      <configuration name="WinTheGameTest" configurationId="GradleRunConfiguration" />
+    <history-entry file="PathTest - 2018.08.12 at 19h 03m 25s.xml">
+      <configuration name="PathTest" configurationId="GradleRunConfiguration" />
     </history-entry>
-    <history-entry file="multi-tic-tac-toe_[test] - 2018.08.12 at 16h 11m 30s.xml">
+    <history-entry file="multi-tic-tac-toe_[test] - 2018.08.12 at 19h 03m 56s.xml">
       <configuration name="multi-tic-tac-toe [test]" configurationId="GradleRunConfiguration" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="56362000" />
+    <option name="totallyTimeSpent" value="58316000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-11" y="-11" width="1942" height="1042" extended-state="6" />
@@ -1137,7 +1076,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3508108" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3508108" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32972974" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -1169,7 +1108,8 @@
     <MESSAGE value="add formatting" />
     <MESSAGE value="add KB tests" />
     <MESSAGE value="add design decisions and assumptions" />
-    <option name="LAST_COMMIT_MESSAGE" value="add design decisions and assumptions" />
+    <MESSAGE value="add usage protocol" />
+    <option name="LAST_COMMIT_MESSAGE" value="add usage protocol" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1356,7 +1296,7 @@
         <state relative-caret-position="0">
           <caret line="0" column="8" lean-forward="false" selection-start-line="0" selection-start-column="8" selection-end-line="0" selection-end-column="56" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1424,37 +1364,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/robson/games/tictactoe/game/ai/modes/HardAIAutoSelectableImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-125">
-          <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="28" selection-end-column="60" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/robson/games/tictactoe/game/ai/modes/NormalAIAutoSelectableImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/robson/games/tictactoe/game/ai/rules/DestroySomeoneElseVictory.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="125">
           <caret line="9" column="38" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="38" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/robson/games/tictactoe/game/ai/rules/DestroySomeoneElseVictoryTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1525">
-          <caret line="61" column="43" lean-forward="false" selection-start-line="61" selection-start-column="43" selection-end-line="61" selection-end-column="43" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1498,14 +1412,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/robson/games/tictactoe/game/ai/rules/TakeTheBestPathOfSomeoneElseTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-531">
-          <caret line="12" column="104" lean-forward="false" selection-start-line="12" selection-start-column="104" selection-end-line="12" selection-end-column="104" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/robson/games/tictactoe/game/ai/rules/TakeTheBestPathForMeTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="375">
@@ -1528,38 +1434,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="251">
           <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/robson/games/tictactoe/model/Playfield.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-199">
-          <caret line="38" column="39" lean-forward="false" selection-start-line="38" selection-start-column="39" selection-end-line="38" selection-end-column="39" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/robson/games/tictactoe/model/Path.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="10" lean-forward="false" selection-start-line="0" selection-start-column="8" selection-end-line="0" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/robson/games/tictactoe/model/PathTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="50">
-          <caret line="2" column="21" lean-forward="false" selection-start-line="2" selection-start-column="21" selection-end-line="2" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/robson/games/tictactoe/game/ai/modes/EasyAIAutoSelectableImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1612,6 +1486,72 @@
             <folding />
           </first_editor>
           <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/robson/games/tictactoe/game/ai/modes/NormalAIAutoSelectableImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="275">
+          <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/robson/games/tictactoe/game/ai/modes/HardAIAutoSelectableImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="25">
+          <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="28" selection-end-column="60" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/robson/games/tictactoe/game/ai/modes/EasyAIAutoSelectableImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="12" column="13" lean-forward="false" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/robson/games/tictactoe/game/ai/rules/DestroySomeoneElseVictoryTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="51" column="0" lean-forward="false" selection-start-line="51" selection-start-column="0" selection-end-line="61" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/robson/games/tictactoe/game/ai/rules/TakeTheBestPathOfSomeoneElseTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="21" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/robson/games/tictactoe/model/PathTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="569">
+          <caret line="168" column="57" lean-forward="false" selection-start-line="168" selection-start-column="57" selection-end-line="168" selection-end-column="57" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/robson/games/tictactoe/model/Path.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="794">
+          <caret line="46" column="23" lean-forward="false" selection-start-line="46" selection-start-column="23" selection-end-line="46" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/robson/games/tictactoe/model/Playfield.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="975">
+          <caret line="99" column="31" lean-forward="false" selection-start-line="99" selection-start-column="31" selection-end-line="99" selection-end-column="31" />
+          <folding />
         </state>
       </provider>
     </entry>
