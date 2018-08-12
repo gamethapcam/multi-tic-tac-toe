@@ -3,11 +3,14 @@ multi-player/board classic tic-tac-toe game System.out based
 
 # Usage
 
-type on the shell station the follow command:
-    $ java TicTacToe.java --config \[config.properties]
-    
-if *config properties file* is not provided, the default values will be used.
+It´s a gradle project. To run using default configuration, just execute through: </br>
 
+**gradle run** <br/>
+
+If you want to pass the configuration file, here´s the one:
+
+**gradle run -Pconfig=\location\config.properties** <br/>
+    
 ## default values
 
 playfield square size 3x3 <br/>

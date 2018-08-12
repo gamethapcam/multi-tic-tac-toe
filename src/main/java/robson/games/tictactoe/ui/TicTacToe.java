@@ -101,8 +101,8 @@ public class TicTacToe {
 
     private Config getConfig(String[] args) throws IOException {
         Config config = Config.defaultConfiguration();
-        if (args.length > 1 && "--config".equals(args[0])) {
-            config = configurationReader.fromFile(args[1]);
+        if (args.length == 1) {
+            config = configurationReader.fromFile(args[0]);
             ValidationChecker.validatePlayfieldSize(config.getPlayfieldSize());
         } else {
             Printer.warn("No configuration file provided. Assuming default values.");

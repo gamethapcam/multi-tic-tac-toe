@@ -18,4 +18,8 @@ mainClassName = "robson.games.tictactoe.ui.TicTacToe"
 
 run {
     standardInput = System.in
+    if (project.hasProperty('config')) {
+        args(config)
+    }
 }
+
