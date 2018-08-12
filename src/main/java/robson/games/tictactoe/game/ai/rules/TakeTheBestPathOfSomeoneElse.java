@@ -2,6 +2,7 @@ package robson.games.tictactoe.game.ai.rules;
 
 import robson.games.tictactoe.game.ai.Rule;
 import robson.games.tictactoe.game.ai.rules.comparators.PathWithFewerFreeFieldsComparator;
+import robson.games.tictactoe.io.Printer;
 import robson.games.tictactoe.model.Path;
 import robson.games.tictactoe.model.Player;
 
@@ -16,6 +17,7 @@ public class TakeTheBestPathOfSomeoneElse implements Rule {
         for (Path path : paths) {
             if (path.containsSamePlayerOnly() && path.countFreeFields() > 0) {
                 path.getFirstFreeField().assign(player);
+                Printer.debug("No way! It is mine.");
                 return true;
             }
         }

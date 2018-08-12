@@ -2,7 +2,7 @@ package robson.games.tictactoe.io;
 
 public final class Printer {
 
-    private static boolean debug = false;
+    private static boolean debug = true;
 
     public static void info(String message) {
         System.out.println(message);

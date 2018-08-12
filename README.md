@@ -40,7 +40,7 @@ despite limited by convention, the board is ready to receive any quadratic size 
 
 ## multi-players
 despite limited by convention, the game is ready to receive any number of players (either human or robots); it´s also
-possible to make two robots play each other!
+possible to let two robots play each other - which is fun and I recommend
 
 ## AI
 There are three levels pre-configured: easy, normal and hard. They are programmatically configured to mix the best 
