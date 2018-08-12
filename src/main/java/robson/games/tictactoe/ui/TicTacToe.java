@@ -73,6 +73,7 @@ public class TicTacToe {
                         playfield.select(player, inputValue.getLineValue(), inputValue.getColumnValue());
 
                     } else {
+                        Printer.info(String.format("Computer %s is playing...", player.getCharacter()));
                         aiEngine.select(player, playfield);
                     }
 
@@ -82,8 +83,8 @@ public class TicTacToe {
                         if (playfield.hasWinner()) {
                             Printer.info(String.format("Congratulations player %s, you win! \\o/", playfield.getWinner().getCharacter()));
                         } else {
-                            assert (playfield.isDraw());
-                            Printer.info("Game is draw :(");
+                            assert (playfield.isTied());
+                            Printer.info("Game is tied! :(");
                         }
 
                         break;

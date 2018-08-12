@@ -15,12 +15,12 @@ public class WhatsTheBestPathForMe implements Rule {
         Collections.sort(slices, new Comparator<Slice>() {
             @Override
             public int compare(Slice slice, Slice t1) {
-                return slice.countFreeFields().compareTo(t1.countFreeFields());
+                return slice.countFreeFields() > t1.countFreeFields() ? -1 : slice.countFreeFields() == t1.countFreeFields() ? 0 : 1;
             }
         });
         for (Slice slice: slices) {
             if (slice.containsOnly(player) && slice.countFreeFields() > 0) {
-                slice.getAFreeField().assign(player);
+                slice.getFirstFreeField().assign(player);
                 return true;
             }
         }

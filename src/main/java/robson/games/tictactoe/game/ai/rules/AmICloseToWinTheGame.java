@@ -12,7 +12,7 @@ public class AmICloseToWinTheGame implements Rule {
     public boolean execute(Player player, List<Slice> slices) {
         for (Slice slice: slices) {
             if (slice.containsOnly(player) && slice.countFreeFields() == 1) {
-                slice.getAFreeField().assign(player);
+                slice.getFirstFreeField().assign(player);
                 return true;
             }
         }

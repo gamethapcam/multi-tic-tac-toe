@@ -107,7 +107,7 @@ public class Playfield {
         return null;
     }
 
-    public boolean isDraw() {
+    public boolean isTied() {
         int countUnworthy = 0;
         for (Slice slice : this.slices) {
             if (slice.isUnworthy()) {
@@ -118,7 +118,7 @@ public class Playfield {
     }
 
     public boolean isOver() {
-        return hasWinner() || isDraw();
+        return hasWinner() || isTied();
     }
 
     public boolean hasField(int row, int column) {
