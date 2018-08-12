@@ -1,4 +1,4 @@
-package robson.games.tictactoe.game.ai.modes.hard;
+package robson.games.tictactoe.game.ai;
 
 import robson.games.tictactoe.model.Player;
 import robson.games.tictactoe.model.Path;

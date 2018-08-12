@@ -1,7 +1,8 @@
-package robson.games.tictactoe.game.ai.modes.hard.comparators;
+package robson.games.tictactoe.game.ai.rules.comparators;
 
 import org.junit.Assert;
 import org.junit.Test;
+import robson.games.tictactoe.game.ai.rules.comparators.PathWithFewerFreeFieldsComparator;
 import robson.games.tictactoe.model.Field;
 import robson.games.tictactoe.model.Path;
 import robson.games.tictactoe.model.Player;

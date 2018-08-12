@@ -1,4 +1,4 @@
-package robson.games.tictactoe.game.ai.modes.hard.comparators;
+package robson.games.tictactoe.game.ai.rules.comparators;
 
 import robson.games.tictactoe.model.Path;
 

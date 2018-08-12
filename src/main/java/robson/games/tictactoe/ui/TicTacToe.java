@@ -1,6 +1,6 @@
 package robson.games.tictactoe.ui;
 
-import robson.games.tictactoe.game.ai.modes.hard.HardAIAutoSelectableImpl;
+import robson.games.tictactoe.game.ai.modes.HardAIAutoSelectableImpl;
 import robson.games.tictactoe.game.PlayersManager;
 import robson.games.tictactoe.game.ValidationChecker;
 import robson.games.tictactoe.io.Config;

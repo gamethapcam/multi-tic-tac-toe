@@ -1,7 +1,6 @@
-package robson.games.tictactoe.game.ai.modes.hard.rules;
+package robson.games.tictactoe.game.ai.rules;
 
-import robson.games.tictactoe.game.ai.modes.hard.Rule;
-import robson.games.tictactoe.game.ai.modes.hard.comparators.PathWithFewerFreeFieldsComparator;
+import robson.games.tictactoe.game.ai.Rule;
 import robson.games.tictactoe.model.Path;
 import robson.games.tictactoe.model.Player;
 
