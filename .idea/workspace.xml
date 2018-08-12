@@ -2,26 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="af8f0392-f8ab-47bb-90ff-ac3546b5d3da" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/robson/games/tictactoe/game/ai/AIAutoSelectable.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/robson/games/tictactoe/game/ai/modes/hard/HardAIAutoSelectableImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/robson/games/tictactoe/game/ai/modes/hard/Rule.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/robson/games/tictactoe/game/ai/modes/hard/comparators/PathWithFewerFreeFieldsComparator.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/robson/games/tictactoe/game/ai/modes/hard/rules/DestroySomeoneElseVictory.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/robson/games/tictactoe/game/ai/modes/hard/rules/ImFeelingLucky.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/robson/games/tictactoe/game/ai/modes/hard/rules/TakeAnEmptyPath.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/robson/games/tictactoe/game/ai/modes/hard/rules/TakeTheBestPathForMe.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/robson/games/tictactoe/game/ai/modes/hard/rules/TakeTheBestPathOfSomeoneElse.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/robson/games/tictactoe/game/ai/modes/hard/rules/WinTheGame.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/robson/games/tictactoe/game/ai/modes/hard/comparators/PathWithFewerFreeFieldsComparatorTest.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/robson/games/tictactoe/game/ai/AIEngine.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/robson/games/tictactoe/game/ai/Rule.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/robson/games/tictactoe/game/ai/rules/AmICloseToWinTheGame.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/robson/games/tictactoe/game/ai/rules/ImFeelingLucky.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/robson/games/tictactoe/game/ai/rules/IsSomebodyCloseToWinTheGame.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/robson/games/tictactoe/game/ai/rules/WhatsTheBestPathForMe.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/robson/games/tictactoe/game/ai/rules/WhatsTheBestPathForSomeoneElse.java" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/robson/games/tictactoe/model/Slice.java" afterPath="$PROJECT_DIR$/src/main/java/robson/games/tictactoe/model/Path.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/robson/games/tictactoe/game/ai/Mode.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/robson/games/tictactoe/game/ai/rules/ImFeelingLucky.java" afterPath="$PROJECT_DIR$/src/main/java/robson/games/tictactoe/game/ai/rules/TakeARandomField.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/robson/games/tictactoe/game/PlayersManager.java" afterPath="$PROJECT_DIR$/src/main/java/robson/games/tictactoe/game/PlayersManager.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/robson/games/tictactoe/game/ai/modes/EasyAIAutoSelectableImpl.java" afterPath="$PROJECT_DIR$/src/main/java/robson/games/tictactoe/game/ai/modes/EasyAIAutoSelectableImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/robson/games/tictactoe/game/ai/modes/HardAIAutoSelectableImpl.java" afterPath="$PROJECT_DIR$/src/main/java/robson/games/tictactoe/game/ai/modes/HardAIAutoSelectableImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/robson/games/tictactoe/game/ai/modes/NormalAIAutoSelectableImpl.java" afterPath="$PROJECT_DIR$/src/main/java/robson/games/tictactoe/game/ai/modes/NormalAIAutoSelectableImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/robson/games/tictactoe/io/Config.java" afterPath="$PROJECT_DIR$/src/main/java/robson/games/tictactoe/io/Config.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/robson/games/tictactoe/model/Field.java" afterPath="$PROJECT_DIR$/src/main/java/robson/games/tictactoe/model/Field.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/robson/games/tictactoe/model/Playfield.java" afterPath="$PROJECT_DIR$/src/main/java/robson/games/tictactoe/model/Playfield.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/robson/games/tictactoe/ui/TicTacToe.java" afterPath="$PROJECT_DIR$/src/main/java/robson/games/tictactoe/ui/TicTacToe.java" />
     </list>
@@ -78,84 +67,63 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="450">
+      <file leaf-file-name="Field.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/robson/games/tictactoe/model/Field.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-25">
+              <caret line="8" column="11" lean-forward="false" selection-start-line="8" selection-start-column="11" selection-end-line="8" selection-end-column="11" />
+              <folding>
+                <element signature="e#490#491#0" expanded="true" />
+                <element signature="e#519#520#0" expanded="true" />
+                <element signature="e#546#547#0" expanded="true" />
+                <element signature="e#572#573#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="TicTacToe.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/robson/games/tictactoe/ui/TicTacToe.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="249">
-              <caret line="48" column="94" lean-forward="false" selection-start-line="48" selection-start-column="94" selection-end-line="48" selection-end-column="94" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DestroySomeoneElseVictory.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/robson/games/tictactoe/game/ai/modes/hard/rules/DestroySomeoneElseVictory.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="125">
-              <caret line="10" column="38" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="38" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ImFeelingLucky.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/robson/games/tictactoe/game/ai/modes/hard/rules/ImFeelingLucky.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="125">
-              <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="15" selection-end-column="39" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="HardAIAutoSelectableImpl.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/robson/games/tictactoe/game/ai/modes/hard/HardAIAutoSelectableImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="375">
-              <caret line="29" column="0" lean-forward="false" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Rule.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/robson/games/tictactoe/game/ai/modes/hard/Rule.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="9" column="28" lean-forward="false" selection-start-line="9" selection-start-column="12" selection-end-line="9" selection-end-column="28" />
+              <caret line="36" column="64" lean-forward="false" selection-start-line="36" selection-start-column="64" selection-end-line="36" selection-end-column="64" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TakeTheBestPathForMe.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/robson/games/tictactoe/game/ai/modes/hard/rules/TakeTheBestPathForMe.java">
+      <file leaf-file-name="ConfigurationReader.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/robson/games/tictactoe/io/ConfigurationReader.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="100">
-              <caret line="13" column="20" lean-forward="false" selection-start-line="13" selection-start-column="20" selection-end-line="13" selection-end-column="20" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TakeAnEmptyPath.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/robson/games/tictactoe/game/ai/modes/hard/rules/TakeAnEmptyPath.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
-              <caret line="22" column="9" lean-forward="false" selection-start-line="22" selection-start-column="9" selection-end-line="22" selection-end-column="9" />
+            <state relative-caret-position="-500">
+              <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="WinTheGame.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/robson/games/tictactoe/game/ai/modes/hard/rules/WinTheGame.java">
+      <file leaf-file-name="Config.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/robson/games/tictactoe/io/Config.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="25">
+              <caret line="4" column="46" lean-forward="false" selection-start-line="4" selection-start-column="46" selection-end-line="4" selection-end-column="46" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PlayersManager.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/robson/games/tictactoe/game/PlayersManager.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="647">
+              <caret line="46" column="34" lean-forward="false" selection-start-line="46" selection-start-column="34" selection-end-line="46" selection-end-column="34" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="WinTheGame.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/robson/games/tictactoe/game/ai/rules/WinTheGame.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="275">
               <caret line="15" column="42" lean-forward="false" selection-start-line="15" selection-start-column="42" selection-end-line="15" selection-end-column="42" />
@@ -164,12 +132,42 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TakeTheBestPathOfSomeoneElse.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/robson/games/tictactoe/game/ai/modes/hard/rules/TakeTheBestPathOfSomeoneElse.java">
+      <file leaf-file-name="NormalAIAutoSelectableImpl.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/robson/games/tictactoe/game/ai/modes/NormalAIAutoSelectableImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="100">
-              <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+            <state relative-caret-position="275">
+              <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Mode.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/robson/games/tictactoe/game/ai/Mode.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="400">
+              <caret line="20" column="49" lean-forward="false" selection-start-line="20" selection-start-column="49" selection-end-line="20" selection-end-column="49" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#348#349#0" expanded="true" />
+                <element signature="e#409#410#0" expanded="true" />
+                <element signature="e#491#492#0" expanded="true" />
+                <element signature="e#554#555#0" expanded="true" />
+                <element signature="e#634#635#0" expanded="true" />
+                <element signature="e#695#696#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="HardAIAutoSelectableImpl.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/robson/games/tictactoe/game/ai/modes/HardAIAutoSelectableImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="175">
+              <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="28" selection-end-column="60" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -177,9 +175,12 @@
       <file leaf-file-name="Playfield.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/robson/games/tictactoe/model/Playfield.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="974">
-              <caret line="119" column="21" lean-forward="false" selection-start-line="119" selection-start-column="20" selection-end-line="119" selection-end-column="21" />
-              <folding />
+            <state relative-caret-position="251">
+              <caret line="38" column="39" lean-forward="false" selection-start-line="38" selection-start-column="39" selection-end-line="38" selection-end-column="39" />
+              <folding>
+                <element signature="e#3168#3169#0" expanded="true" />
+                <element signature="e#3214#3215#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -191,6 +192,7 @@
       <list>
         <option value="Interface" />
         <option value="Class" />
+        <option value="Enum" />
       </list>
     </option>
   </component>
@@ -586,10 +588,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/robson/games/tictactoe/engine/Piece.java" />
-        <option value="$PROJECT_DIR$/src/main/java/robson/games/tictactoe/engine/BoardPiece.java" />
-        <option value="$PROJECT_DIR$/src/main/java/robson/games/tictactoe/engine/BoardValidSlice.java" />
-        <option value="$PROJECT_DIR$/src/main/java/robson/games/tictactoe/game/Player.java" />
         <option value="$PROJECT_DIR$/src/main/java/robson/games/tictactoe/game/BoardPiece.java" />
         <option value="$PROJECT_DIR$/src/main/java/robson/games/tictactoe/engine/BoardSlicer.java" />
         <option value="$PROJECT_DIR$/src/main/java/robson/games/tictactoe/game/BoardValidSlice.java" />
@@ -601,7 +599,6 @@
         <option value="$PROJECT_DIR$/src/main/java/robson/games/tictactoe/io/ConfigUtils.java" />
         <option value="$PROJECT_DIR$/src/main/java/robson/games/tictactoe/game/RulesChecker.java" />
         <option value="$PROJECT_DIR$/src/main/java/robson/games/tictactoe/io/ConfigurationReader.java" />
-        <option value="$PROJECT_DIR$/src/main/java/robson/games/tictactoe/game/PlayersManager.java" />
         <option value="$PROJECT_DIR$/src/main/java/robson/games/tictactoe/io/OP.java" />
         <option value="$PROJECT_DIR$/src/main/java/robson/games/tictactoe/model/ComputerPlayer.java" />
         <option value="$PROJECT_DIR$/src/main/java/robson/games/tictactoe/utils/ConfigUtils.java" />
@@ -613,8 +610,6 @@
         <option value="$PROJECT_DIR$/src/main/java/robson/games/tictactoe/game/ai/AmICloseToWinTheGame.java" />
         <option value="$PROJECT_DIR$/src/main/java/robson/games/tictactoe/game/ai/WhatsTheBestPathForSomeoneElse.java" />
         <option value="$PROJECT_DIR$/src/main/java/robson/games/tictactoe/game/ai/rules/IsSomebodyCloseToWinTheGame.java" />
-        <option value="$PROJECT_DIR$/src/main/java/robson/games/tictactoe/io/Config.java" />
-        <option value="$PROJECT_DIR$/src/main/java/robson/games/tictactoe/game/ai/rules/ImFeelingLucky.java" />
         <option value="$PROJECT_DIR$/src/main/java/robson/games/tictactoe/model/Slice.java" />
         <option value="$PROJECT_DIR$/src/main/java/robson/games/tictactoe/game/ai/rules/WhatsTheBestPathForMe.java" />
         <option value="$PROJECT_DIR$/src/main/java/robson/games/tictactoe/game/ai/rules/WhatsTheBestPathForSomeoneElse.java" />
@@ -629,14 +624,21 @@
         <option value="$PROJECT_DIR$/src/main/java/robson/games/tictactoe/game/ai/simple/rules/TakeTheBestPathForMe.java" />
         <option value="$PROJECT_DIR$/src/main/java/robson/games/tictactoe/game/ai/simple/SimpleAIAutoSelectableImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/robson/games/tictactoe/model/Path.java" />
-        <option value="$PROJECT_DIR$/src/main/java/robson/games/tictactoe/model/Playfield.java" />
         <option value="$PROJECT_DIR$/src/main/java/robson/games/tictactoe/game/ai/modes/hard/comparators/PathWithFewerFreeFieldsComparator.java" />
         <option value="$PROJECT_DIR$/src/test/java/robson/games/tictactoe/game/ai/modes/hard/comparators/PathWithFewerFreeFieldsComparatorTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/robson/games/tictactoe/ui/TicTacToe.java" />
         <option value="$PROJECT_DIR$/src/main/java/robson/games/tictactoe/game/ai/modes/hard/rules/DestroySomeoneElseVictory.java" />
         <option value="$PROJECT_DIR$/src/main/java/robson/games/tictactoe/game/ai/modes/hard/rules/WinTheGame.java" />
         <option value="$PROJECT_DIR$/src/main/java/robson/games/tictactoe/game/ai/modes/hard/HardAIAutoSelectableImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/robson/games/tictactoe/game/ai/modes/hard/rules/TakeAnEmptyPath.java" />
+        <option value="$PROJECT_DIR$/src/main/java/robson/games/tictactoe/game/ai/rules/ImFeelingLucky.java" />
+        <option value="$PROJECT_DIR$/src/main/java/robson/games/tictactoe/game/ai/modes/EasyAIAutoSelectableImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/robson/games/tictactoe/game/ai/modes/NormalAIAutoSelectableImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/robson/games/tictactoe/game/ai/Mode.java" />
+        <option value="$PROJECT_DIR$/src/main/java/robson/games/tictactoe/io/Config.java" />
+        <option value="$PROJECT_DIR$/src/main/java/robson/games/tictactoe/game/PlayersManager.java" />
+        <option value="$PROJECT_DIR$/src/main/java/robson/games/tictactoe/ui/TicTacToe.java" />
+        <option value="$PROJECT_DIR$/src/main/java/robson/games/tictactoe/model/Field.java" />
+        <option value="$PROJECT_DIR$/src/main/java/robson/games/tictactoe/model/Playfield.java" />
       </list>
     </option>
   </component>
@@ -731,31 +733,16 @@
               <item name="tictactoe" type="462c0819:PsiDirectoryNode" />
               <item name="game" type="462c0819:PsiDirectoryNode" />
               <item name="ai" type="462c0819:PsiDirectoryNode" />
-              <item name="hard" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="tictactoe" type="b2602c69:ProjectViewProjectNode" />
-              <item name="multi-tic-tac-toe" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="tictactoe" type="462c0819:PsiDirectoryNode" />
-              <item name="game" type="462c0819:PsiDirectoryNode" />
-              <item name="ai" type="462c0819:PsiDirectoryNode" />
-              <item name="hard" type="462c0819:PsiDirectoryNode" />
-              <item name="comparators" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="tictactoe" type="b2602c69:ProjectViewProjectNode" />
-              <item name="multi-tic-tac-toe" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="tictactoe" type="462c0819:PsiDirectoryNode" />
-              <item name="game" type="462c0819:PsiDirectoryNode" />
-              <item name="ai" type="462c0819:PsiDirectoryNode" />
-              <item name="hard" type="462c0819:PsiDirectoryNode" />
               <item name="rules" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tictactoe" type="b2602c69:ProjectViewProjectNode" />
+              <item name="multi-tic-tac-toe" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="tictactoe" type="462c0819:PsiDirectoryNode" />
+              <item name="io" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="tictactoe" type="b2602c69:ProjectViewProjectNode" />
@@ -870,6 +857,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="robson.games.tictactoe.game.ai.modes" />
       <recent name="robson.games.tictactoe.game.ai.modes.hard.rules" />
       <recent name="robson.games.tictactoe.game.ai.rules" />
       <recent name="robson.games.tictactoe.game.ai" />
@@ -1043,7 +1031,7 @@
       <option name="presentableId" value="Default" />
       <updated>1533913356264</updated>
       <workItem from="1533913359357" duration="11282000" />
-      <workItem from="1534000222232" duration="35156000" />
+      <workItem from="1534000222232" duration="38135000" />
     </task>
     <task id="LOCAL-00001" summary="improve slice algorithm">
       <created>1534003331569</created>
@@ -1073,7 +1061,21 @@
       <option name="project" value="LOCAL" />
       <updated>1534048224101</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Fix comparator issue">
+      <created>1534093263040</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1534093263040</updated>
+    </task>
+    <task id="LOCAL-00006" summary="add some refactoring to the rule engine">
+      <created>1534093793709</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1534093793709</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1097,7 +1099,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="46438000" />
+    <option name="totallyTimeSpent" value="49417000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-11" y="-11" width="1942" height="1042" extended-state="6" />
@@ -1106,7 +1108,7 @@
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33055887" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33055887" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1137,7 +1139,9 @@
     <MESSAGE value="move it on!" />
     <MESSAGE value="add AI capabilities" />
     <MESSAGE value="improve the AI knowledge base" />
-    <option name="LAST_COMMIT_MESSAGE" value="improve the AI knowledge base" />
+    <MESSAGE value="Fix comparator issue" />
+    <MESSAGE value="add some refactoring to the rule engine" />
+    <option name="LAST_COMMIT_MESSAGE" value="add some refactoring to the rule engine" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1150,7 +1154,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2525">
           <caret line="102" column="19" lean-forward="false" selection-start-line="102" selection-start-column="19" selection-end-line="102" selection-end-column="19" />
-          <folding />
+          <folding>
+            <element signature="e#3168#3169#0" expanded="true" />
+            <element signature="e#3214#3215#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1369,16 +1376,8 @@
         <state relative-caret-position="125">
           <caret line="5" column="17" lean-forward="false" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/robson/games/tictactoe/game/PlayersManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-80">
-          <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1386,22 +1385,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="148">
           <caret line="10" column="23" lean-forward="false" selection-start-line="10" selection-start-column="23" selection-end-line="10" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/robson/games/tictactoe/io/Config.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-350">
-          <caret line="4" column="46" lean-forward="false" selection-start-line="4" selection-start-column="46" selection-end-line="4" selection-end-column="46" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/robson/games/tictactoe/io/ConfigurationReader.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-902">
-          <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1422,51 +1405,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/robson/games/tictactoe/model/Field.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="50">
-          <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/robson/games/tictactoe/game/ai/modes/hard/comparators/PathWithFewerFreeFieldsComparator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="475">
-          <caret line="19" column="72" lean-forward="false" selection-start-line="19" selection-start-column="72" selection-end-line="19" selection-end-column="72" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/robson/games/tictactoe/game/ai/modes/hard/comparators/PathWithFewerFreeFieldsComparatorTest.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/robson/games/tictactoe/game/ai/rules/comparators/PathWithFewerFreeFieldsComparatorTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="248">
           <caret line="55" column="44" lean-forward="false" selection-start-line="55" selection-start-column="44" selection-end-line="55" selection-end-column="44" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/robson/games/tictactoe/model/Playfield.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="974">
-          <caret line="119" column="21" lean-forward="false" selection-start-line="119" selection-start-column="20" selection-end-line="119" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/robson/games/tictactoe/ui/TicTacToe.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="249">
-          <caret line="48" column="94" lean-forward="false" selection-start-line="48" selection-start-column="94" selection-end-line="48" selection-end-column="94" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/robson/games/tictactoe/game/ai/modes/hard/Rule.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/robson/games/tictactoe/game/ai/Rule.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
           <caret line="9" column="28" lean-forward="false" selection-start-line="9" selection-start-column="12" selection-end-line="9" selection-end-column="28" />
@@ -1474,64 +1423,162 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/robson/games/tictactoe/game/ai/modes/hard/rules/DestroySomeoneElseVictory.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/robson/games/tictactoe/game/ai/rules/DestroySomeoneElseVictory.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="125">
           <caret line="10" column="38" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="38" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/robson/games/tictactoe/game/ai/modes/hard/rules/ImFeelingLucky.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="15" selection-end-column="39" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/robson/games/tictactoe/game/ai/modes/hard/rules/TakeAnEmptyPath.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/robson/games/tictactoe/game/ai/rules/TakeAnEmptyPath.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="375">
-          <caret line="22" column="9" lean-forward="false" selection-start-line="22" selection-start-column="9" selection-end-line="22" selection-end-column="9" />
+          <caret line="21" column="9" lean-forward="false" selection-start-line="21" selection-start-column="9" selection-end-line="21" selection-end-column="9" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/robson/games/tictactoe/game/ai/modes/hard/rules/TakeTheBestPathForMe.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/robson/games/tictactoe/game/ai/rules/TakeTheBestPathForMe.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="100">
           <caret line="13" column="20" lean-forward="false" selection-start-line="13" selection-start-column="20" selection-end-line="13" selection-end-column="20" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/robson/games/tictactoe/game/ai/modes/hard/rules/WinTheGame.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/robson/games/tictactoe/game/ai/rules/TakeTheBestPathOfSomeoneElse.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="15" column="42" lean-forward="false" selection-start-line="15" selection-start-column="42" selection-end-line="15" selection-end-column="42" />
+        <state relative-caret-position="100">
+          <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/robson/games/tictactoe/game/ai/modes/hard/HardAIAutoSelectableImpl.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/robson/games/tictactoe/game/ai/rules/TakeARandomField.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="29" column="0" lean-forward="false" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+        <state relative-caret-position="275">
+          <caret line="20" column="13" lean-forward="false" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/robson/games/tictactoe/game/ai/rules/comparators/PathWithFewerFreeFieldsComparator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="8" lean-forward="false" selection-start-line="0" selection-start-column="8" selection-end-line="0" selection-end-column="56" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/robson/games/tictactoe/game/ai/modes/hard/rules/TakeTheBestPathOfSomeoneElse.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/robson/games/tictactoe/game/ai/modes/EasyAIAutoSelectableImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
+        <state relative-caret-position="225">
+          <caret line="17" column="52" lean-forward="false" selection-start-line="17" selection-start-column="52" selection-end-line="17" selection-end-column="52" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/robson/games/tictactoe/game/ai/modes/HardAIAutoSelectableImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="28" selection-end-column="60" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/robson/games/tictactoe/game/ai/modes/NormalAIAutoSelectableImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="275">
+          <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/robson/games/tictactoe/game/ai/Mode.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="400">
+          <caret line="20" column="49" lean-forward="false" selection-start-line="20" selection-start-column="49" selection-end-line="20" selection-end-column="49" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#348#349#0" expanded="true" />
+            <element signature="e#409#410#0" expanded="true" />
+            <element signature="e#491#492#0" expanded="true" />
+            <element signature="e#554#555#0" expanded="true" />
+            <element signature="e#634#635#0" expanded="true" />
+            <element signature="e#695#696#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/robson/games/tictactoe/io/Config.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="25">
+          <caret line="4" column="46" lean-forward="false" selection-start-line="4" selection-start-column="46" selection-end-line="4" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/robson/games/tictactoe/io/ConfigurationReader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-500">
           <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/robson/games/tictactoe/ui/TicTacToe.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="36" column="64" lean-forward="false" selection-start-line="36" selection-start-column="64" selection-end-line="36" selection-end-column="64" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/robson/games/tictactoe/model/Playfield.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="251">
+          <caret line="38" column="39" lean-forward="false" selection-start-line="38" selection-start-column="39" selection-end-line="38" selection-end-column="39" />
+          <folding>
+            <element signature="e#3168#3169#0" expanded="true" />
+            <element signature="e#3214#3215#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/robson/games/tictactoe/model/Field.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-25">
+          <caret line="8" column="11" lean-forward="false" selection-start-line="8" selection-start-column="11" selection-end-line="8" selection-end-column="11" />
+          <folding>
+            <element signature="e#490#491#0" expanded="true" />
+            <element signature="e#519#520#0" expanded="true" />
+            <element signature="e#546#547#0" expanded="true" />
+            <element signature="e#572#573#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/robson/games/tictactoe/game/PlayersManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="647">
+          <caret line="46" column="34" lean-forward="false" selection-start-line="46" selection-start-column="34" selection-end-line="46" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/robson/games/tictactoe/game/ai/rules/WinTheGame.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="275">
+          <caret line="15" column="42" lean-forward="false" selection-start-line="15" selection-start-column="42" selection-end-line="15" selection-end-column="42" />
           <folding />
         </state>
       </provider>

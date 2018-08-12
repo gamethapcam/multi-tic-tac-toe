@@ -35,5 +35,18 @@ public class PlayersManager {
         return new ArrayList<>(result);
     }
 
+    public List<Player> twoRobots() {
+        List<Player> players = new ArrayList<>();
+        players.add(new Player('O', false));
+        players.add(new Player('X', false));
+        return players;
+    }
+
+    public List<Player> singlePlayer() {
+        List<Player> players = new ArrayList<>();
+        players.add(new Player('O'));
+        players.add(new Player('X', false));
+        return players;
+    }
 
 }

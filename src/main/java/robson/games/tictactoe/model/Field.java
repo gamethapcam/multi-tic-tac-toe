@@ -1,6 +1,16 @@
 package robson.games.tictactoe.model;
 
 public class Field {
+
+    private int column;
+
+    private int row;
+
+    public Field(int column, int row) {
+        this.column = column;
+        this.row = row;
+    }
+
     private Player assigned;
 
     public void assign(Player player) {
@@ -13,5 +23,13 @@ public class Field {
 
     public boolean isAssigned() {
         return assigned != null;
+    }
+
+    public int getColumn() {
+        return column;
+    }
+
+    public int getRow() {
+        return row;
     }
 }

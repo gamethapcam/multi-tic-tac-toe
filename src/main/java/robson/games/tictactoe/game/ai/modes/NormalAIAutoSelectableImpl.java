@@ -2,8 +2,7 @@ package robson.games.tictactoe.game.ai.modes;
 
 import robson.games.tictactoe.game.ai.AIAutoSelectable;
 import robson.games.tictactoe.game.ai.Rule;
-import robson.games.tictactoe.game.ai.rules.DestroySomeoneElseVictory;
-import robson.games.tictactoe.game.ai.rules.ImFeelingLucky;
+import robson.games.tictactoe.game.ai.rules.TakeARandomField;
 import robson.games.tictactoe.game.ai.rules.TakeAnEmptyPath;
 import robson.games.tictactoe.game.ai.rules.TakeTheBestPathForMe;
 import robson.games.tictactoe.game.ai.rules.TakeTheBestPathOfSomeoneElse;
@@ -25,7 +24,7 @@ public class NormalAIAutoSelectableImpl implements AIAutoSelectable {
         this.rulesKnowledgeBase.add(new TakeTheBestPathForMe());
         this.rulesKnowledgeBase.add(new TakeAnEmptyPath());
         this.rulesKnowledgeBase.add(new TakeTheBestPathOfSomeoneElse());
-        this.rulesKnowledgeBase.add(new ImFeelingLucky());
+        this.rulesKnowledgeBase.add(new TakeARandomField());
     }
 
     @Override

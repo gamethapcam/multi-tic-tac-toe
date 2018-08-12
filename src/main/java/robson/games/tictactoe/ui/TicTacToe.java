@@ -1,6 +1,7 @@
 package robson.games.tictactoe.ui;
 
-import robson.games.tictactoe.game.ai.modes.HardAIAutoSelectableImpl;
+import robson.games.tictactoe.game.ai.AIAutoSelectable;
+import robson.games.tictactoe.game.ai.Mode;
 import robson.games.tictactoe.game.PlayersManager;
 import robson.games.tictactoe.game.ValidationChecker;
 import robson.games.tictactoe.io.Config;
@@ -19,7 +20,7 @@ public class TicTacToe {
 
     private PlayersManager playersManager = new PlayersManager();
 
-    private HardAIAutoSelectableImpl hardAiAutoSelectableImpl = new HardAIAutoSelectableImpl();
+    private AIAutoSelectable aiMode = Mode.HARD.getInstance();
 
 
     public void play(String args[]) {
@@ -33,7 +34,7 @@ public class TicTacToe {
             Printer.info("You can quit the game at any time by typing the combination 'CTRL+C'");
 
 
-            List<Player> players = playersManager.load(config);
+            List<Player> players = playersManager.singlePlayer();
             Collections.shuffle(players);
 
             Playfield playfield = new Playfield(config.getPlayfieldSize(), config.getPlayfieldSize());
@@ -74,7 +75,7 @@ public class TicTacToe {
 
                     } else {
                         Printer.info(String.format("Computer %s is playing...", player.getCharacter()));
-                        hardAiAutoSelectableImpl.select(player, playfield);
+                        aiMode.select(player, playfield);
                     }
 
                     print(playfield);
@@ -83,8 +84,8 @@ public class TicTacToe {
                         if (playfield.hasWinner()) {
                             Printer.info(String.format("Congratulations player %s, you win! \\o/", playfield.getWinner().getCharacter()));
                         } else {
-                            assert (playfield.isTied());
-                            Printer.info("Game is tied! :(");
+                            assert (playfield.isDraw());
+                            Printer.info("Game is draw! :(");
                         }
 
                         break;

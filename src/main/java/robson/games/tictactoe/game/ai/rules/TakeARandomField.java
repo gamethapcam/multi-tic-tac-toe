@@ -8,7 +8,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-public class ImFeelingLucky implements Rule {
+public class TakeARandomField implements Rule {
 
     @Override
     public boolean executeSelection(Player player, List<Path> paths) {

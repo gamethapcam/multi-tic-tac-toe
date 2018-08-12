@@ -2,7 +2,7 @@ package robson.games.tictactoe.io;
 
 public class Config {
 
-    public static final int PLAYFIELD_SIZE = 5;
+    public static final int PLAYFIELD_SIZE = 3;
     public static final char FIRST_PLAYER_CHAR = 'O';
     public static final char SECOND_PLAYER_CHAR = 'X';
     public static final char COMPUTER_PLAYER_CHAR = 'R';

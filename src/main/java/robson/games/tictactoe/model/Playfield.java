@@ -36,7 +36,7 @@ public class Playfield {
         this.fields = new Field[this.rows][this.columns];
         for (int i = 0; i < rows; i++) {
             for (int j = 0; j < columns; j++) {
-                fields[i][j] = new Field();
+                fields[i][j] = new Field(i, j);
             }
         }
     }
@@ -107,7 +107,7 @@ public class Playfield {
         return null;
     }
 
-    public boolean isTied() {
+    public boolean isDraw() {
         int countBadPaths = 0;
         for (Path path : this.paths) {
             if (path.isBadPath()) {
@@ -118,7 +118,7 @@ public class Playfield {
     }
 
     public boolean isOver() {
-        return hasWinner() || isTied();
+        return hasWinner() || isDraw();
     }
 
     public boolean hasField(int row, int column) {
