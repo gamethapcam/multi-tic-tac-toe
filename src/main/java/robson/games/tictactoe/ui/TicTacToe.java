@@ -1,6 +1,6 @@
 package robson.games.tictactoe.ui;
 
-import robson.games.tictactoe.game.ai.AIEngine;
+import robson.games.tictactoe.game.ai.modes.hard.HardAIAutoSelectableImpl;
 import robson.games.tictactoe.game.PlayersManager;
 import robson.games.tictactoe.game.ValidationChecker;
 import robson.games.tictactoe.io.Config;
@@ -19,7 +19,7 @@ public class TicTacToe {
 
     private PlayersManager playersManager = new PlayersManager();
 
-    private AIEngine aiEngine = new AIEngine();
+    private HardAIAutoSelectableImpl hardAiAutoSelectableImpl = new HardAIAutoSelectableImpl();
 
 
     public void play(String args[]) {
@@ -46,7 +46,7 @@ public class TicTacToe {
                         boolean isValidInput = false;
                         InputValue inputValue = null;
                         while (!isValidInput) {
-                            Printer.info(String.format("Player %s, please enter your game. Format: <line, column> e.g. 1,2", player.getCharacter()));
+                            Printer.info(String.format("Player %s, please enter your selection. Format: <line, column> e.g. 1,2", player.getCharacter()));
 
                             String userOption = userControl.nextLine();
                             inputValue = new InputValue(userOption);
@@ -74,7 +74,7 @@ public class TicTacToe {
 
                     } else {
                         Printer.info(String.format("Computer %s is playing...", player.getCharacter()));
-                        aiEngine.select(player, playfield);
+                        hardAiAutoSelectableImpl.select(player, playfield);
                     }
 
                     print(playfield);

@@ -6,7 +6,7 @@ import java.util.List;
 public class Playfield {
 
     private Field[][] fields;
-    private List<Slice> slices;
+    private List<Path> paths;
 
     private final int rows;
     private final int columns;
@@ -15,14 +15,14 @@ public class Playfield {
         this.rows = rows;
         this.columns = columns;
         this.reset();
-        this.slice();
+        this.resetAllPossiblePaths();
     }
 
     public Field[][] getFields() {
         return this.fields;
     }
 
-    public List<Slice> getSlices() { return this.slices; }
+    public List<Path> getPaths() { return this.paths; }
 
     public int getRows() {
         return this.rows;
@@ -47,48 +47,48 @@ public class Playfield {
         }
     }
 
-    private List<Slice> initializeListOfValidSlice(int size) {
-        List<Slice> result = new ArrayList<>(size);
+    private List<Path> initializeListOfValidPaths(int size) {
+        List<Path> result = new ArrayList<>(size);
         for (int i = 0; i < size; i++) {
-            result.add(new Slice());
+            result.add(new Path());
         }
         return result;
     }
 
-    public void slice() {
-        this.slices = new ArrayList<>();
-        List<Slice> rowSlices = initializeListOfValidSlice(this.rows);
-        List<Slice> columnSlices = initializeListOfValidSlice(this.columns);
-        this.slices.addAll(rowSlices);
-        this.slices.addAll(columnSlices);
+    private void resetAllPossiblePaths() {
+        this.paths = new ArrayList<>();
+        List<Path> rowPaths = initializeListOfValidPaths(this.rows);
+        List<Path> columnPaths = initializeListOfValidPaths(this.columns);
+        this.paths.addAll(rowPaths);
+        this.paths.addAll(columnPaths);
 
         for (int i = 0; i < rows; i++) {
             for (int j = 0; j < columns; j++) {
-                rowSlices.get(i).add(fields[i][j]);
-                columnSlices.get(j).add(fields[i][j]);
+                rowPaths.get(i).add(fields[i][j]);
+                columnPaths.get(j).add(fields[i][j]);
             }
         }
 
-        //tie the diagonal possibilities
-        if (rows == columns) { //check if it´s a perfect square
-            Slice leftSlice = new Slice();
+        //check the diagonal possibilities
+        if (rows == columns) { //check if it´s a square
+            Path leftPath = new Path();
             for (int i = 0; i < rows; i++) {
-                leftSlice.add(fields[i][i]);
+                leftPath.add(fields[i][i]);
             }
-            this.slices.add(leftSlice);
+            this.paths.add(leftPath);
 
-            Slice rightSlice = new Slice();
+            Path rightPath = new Path();
             int rcolumn = columns - 1;
             for (int i = 0; i < rows; i++) {
-                rightSlice.add(fields[i][rcolumn--]);
+                rightPath.add(fields[i][rcolumn--]);
             }
-            this.slices.add(rightSlice);
+            this.paths.add(rightPath);
         }
     }
 
     public boolean hasWinner() {
-        for (Slice slice : this.slices) {
-            if (slice.hasWinner()) {
+        for (Path path : this.paths) {
+            if (path.hasWinner()) {
                 return true;
             }
         }
@@ -99,22 +99,22 @@ public class Playfield {
         if (!hasWinner()) {
             throw new IllegalStateException("There´s no winner.");
         }
-        for (Slice slice : this.slices) {
-            if (slice.hasWinner()) {
-                return slice.getFields().get(0).getAssigned();
+        for (Path path : this.paths) {
+            if (path.hasWinner()) {
+                return path.getFields().get(0).getAssigned();
             }
         }
         return null;
     }
 
     public boolean isTied() {
-        int countUnworthy = 0;
-        for (Slice slice : this.slices) {
-            if (slice.isUnworthy()) {
-                countUnworthy++;
+        int countBadPaths = 0;
+        for (Path path : this.paths) {
+            if (path.isBadPath()) {
+                countBadPaths++;
             }
         }
-        return countUnworthy == this.slices.size();
+        return countBadPaths == this.paths.size();
     }
 
     public boolean isOver() {

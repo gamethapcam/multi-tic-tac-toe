@@ -4,16 +4,16 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-public class Slice {
+public class Path {
 
     private List<Field> fields;
 
-    public Slice() {
+    public Path() {
         this.fields = new ArrayList<>();
     }
 
-    public void add(Field piece) {
-        this.fields.add(piece);
+    public void add(Field field) {
+        this.fields.add(field);
     }
 
     public List<Field> getFields() {
@@ -23,7 +23,7 @@ public class Slice {
     public boolean hasWinner() {
 
         //empty path?
-        if (this.fields == null || this.fields.isEmpty()) {
+        if (this.isEmpty()) {
             return false;
         }
 
@@ -32,10 +32,10 @@ public class Slice {
             return false;
         }
 
-        //unmatched slice?
+        //unmatched path?
         Field first = fields.get(0);
-        for (Field piece : this.fields) {
-            if (!first.getAssigned().equals(piece.getAssigned())) {
+        for (Field field : this.fields) {
+            if (!first.getAssigned().equals(field.getAssigned())) {
                 return false;
             }
         }
@@ -44,7 +44,7 @@ public class Slice {
 
     }
 
-    public boolean isUnworthy() {
+    public boolean isBadPath() {
         return isFull() && !hasWinner();
     }
 
@@ -58,6 +58,9 @@ public class Slice {
     }
 
     public boolean isEmpty() {
+        if (this.fields == null || this.fields.isEmpty()) {
+            return true;
+        }
         for (Field field : this.fields) {
             if (field.isAssigned()) {
                 return false;
@@ -121,7 +124,7 @@ public class Slice {
         }
 
         Player firstNotNull = null;
-        for (Field field: this.fields) {
+        for (Field field : this.fields) {
             if (field.getAssigned() != null) {
                 firstNotNull = field.getAssigned();
                 break;
