@@ -84,10 +84,8 @@ public class TicTacToe {
                         if (playfield.hasWinner()) {
                             Printer.info(String.format("Congratulations player %s, you win! \\o/", playfield.getWinner().getCharacter()));
                         } else {
-                            assert (playfield.isDraw());
                             Printer.info("Game is draw! :(");
                         }
-
                         break;
                     }
                 }

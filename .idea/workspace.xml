@@ -3,13 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="af8f0392-f8ab-47bb-90ff-ac3546b5d3da" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/robson/games/tictactoe/game/ai/rules/DestroySomeoneElseVictory.java" afterPath="$PROJECT_DIR$/src/main/java/robson/games/tictactoe/game/ai/rules/DestroySomeoneElseVictory.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/robson/games/tictactoe/game/ai/rules/TakeAnEmptyPath.java" afterPath="$PROJECT_DIR$/src/main/java/robson/games/tictactoe/game/ai/rules/TakeAnEmptyPath.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/robson/games/tictactoe/game/ai/rules/TakeTheBestPathOfSomeoneElse.java" afterPath="$PROJECT_DIR$/src/main/java/robson/games/tictactoe/game/ai/rules/TakeTheBestPathOfSomeoneElse.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/robson/games/tictactoe/game/ai/rules/WinTheGame.java" afterPath="$PROJECT_DIR$/src/main/java/robson/games/tictactoe/game/ai/rules/WinTheGame.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/robson/games/tictactoe/io/Printer.java" afterPath="$PROJECT_DIR$/src/main/java/robson/games/tictactoe/io/Printer.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/robson/games/tictactoe/model/Playfield.java" afterPath="$PROJECT_DIR$/src/main/java/robson/games/tictactoe/model/Playfield.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/robson/games/tictactoe/ui/TicTacToe.java" afterPath="$PROJECT_DIR$/src/main/java/robson/games/tictactoe/ui/TicTacToe.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -129,8 +123,8 @@
       <file leaf-file-name="TicTacToe.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/robson/games/tictactoe/ui/TicTacToe.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1924">
-              <caret line="23" column="47" lean-forward="false" selection-start-line="23" selection-start-column="47" selection-end-line="23" selection-end-column="47" />
+            <state relative-caret-position="650">
+              <caret line="87" column="25" lean-forward="false" selection-start-line="87" selection-start-column="25" selection-end-line="87" selection-end-column="25" />
               <folding />
             </state>
           </provider>
@@ -730,55 +724,7 @@
               <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="tictactoe" type="462c0819:PsiDirectoryNode" />
-              <item name="game" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="tictactoe" type="b2602c69:ProjectViewProjectNode" />
-              <item name="multi-tic-tac-toe" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="tictactoe" type="462c0819:PsiDirectoryNode" />
-              <item name="game" type="462c0819:PsiDirectoryNode" />
-              <item name="ai" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="tictactoe" type="b2602c69:ProjectViewProjectNode" />
-              <item name="multi-tic-tac-toe" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="tictactoe" type="462c0819:PsiDirectoryNode" />
-              <item name="game" type="462c0819:PsiDirectoryNode" />
-              <item name="ai" type="462c0819:PsiDirectoryNode" />
-              <item name="rules" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="tictactoe" type="b2602c69:ProjectViewProjectNode" />
-              <item name="multi-tic-tac-toe" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="tictactoe" type="462c0819:PsiDirectoryNode" />
-              <item name="model" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="tictactoe" type="b2602c69:ProjectViewProjectNode" />
-              <item name="multi-tic-tac-toe" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="tictactoe" type="462c0819:PsiDirectoryNode" />
               <item name="ui" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="tictactoe" type="b2602c69:ProjectViewProjectNode" />
-              <item name="multi-tic-tac-toe" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="tictactoe" type="462c0819:PsiDirectoryNode" />
-              <item name="utils" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="tictactoe" type="b2602c69:ProjectViewProjectNode" />
@@ -836,6 +782,7 @@
     <property name="ChangesBrowser.SHOW_FLATTEN" value="true" />
     <property name="extract.method.default.visibility" value="private" />
     <property name="settings.editor.selected.configurable" value="copyright.profiles" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -1028,7 +975,7 @@
       <option name="presentableId" value="Default" />
       <updated>1533913356264</updated>
       <workItem from="1533913359357" duration="11282000" />
-      <workItem from="1534000222232" duration="48279000" />
+      <workItem from="1534000222232" duration="48491000" />
     </task>
     <task id="LOCAL-00001" summary="improve slice algorithm">
       <created>1534003331569</created>
@@ -1114,7 +1061,14 @@
       <option name="project" value="LOCAL" />
       <updated>1534111600061</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="add path tests">
+      <created>1534117356383</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1534117356383</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1150,7 +1104,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="59561000" />
+    <option name="totallyTimeSpent" value="59773000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-11" y="-11" width="1942" height="1042" extended-state="6" />
@@ -1630,8 +1584,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/robson/games/tictactoe/ui/TicTacToe.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1924">
-          <caret line="23" column="47" lean-forward="false" selection-start-line="23" selection-start-column="47" selection-end-line="23" selection-end-column="47" />
+        <state relative-caret-position="650">
+          <caret line="87" column="25" lean-forward="false" selection-start-line="87" selection-start-column="25" selection-end-line="87" selection-end-column="25" />
           <folding />
         </state>
       </provider>
