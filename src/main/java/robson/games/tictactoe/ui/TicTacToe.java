@@ -1,11 +1,12 @@
 package robson.games.tictactoe.ui;
 
-import robson.games.tictactoe.game.ai.AIAutoSelectable;
-import robson.games.tictactoe.game.ai.Mode;
 import robson.games.tictactoe.game.PlayersManager;
 import robson.games.tictactoe.game.ValidationChecker;
+import robson.games.tictactoe.game.ai.AIAutoSelectable;
+import robson.games.tictactoe.game.ai.Mode;
 import robson.games.tictactoe.io.Config;
 import robson.games.tictactoe.io.ConfigurationReader;
+import robson.games.tictactoe.io.Printer;
 import robson.games.tictactoe.model.Player;
 import robson.games.tictactoe.model.Playfield;
 
@@ -29,15 +30,14 @@ public class TicTacToe {
 
             Config config = getConfig(args);
 
-            Printer.info(String.format("Configuration is loaded as: playfieldsize=%d, firstplayerchar=%s, secondplayerchar=%s and computerchar=%s", config.getPlayfieldSize(), config.getFirstPlayerChar(), config.getSecondPlayerChar(), config.getComputerPlayerChar()));
-
             Printer.info("You can quit the game at any time by typing the combination 'CTRL+C'");
 
 
-            List<Player> players = playersManager.singlePlayer();
+            List<Player> players = playersManager.load(config);
             Collections.shuffle(players);
 
             Playfield playfield = new Playfield(config.getPlayfieldSize(), config.getPlayfieldSize());
+
             print(playfield);
 
             Scanner userControl = new Scanner(System.in);
@@ -107,6 +107,7 @@ public class TicTacToe {
         } else {
             Printer.warn("No configuration file provided. Assuming default values.");
         }
+        Printer.debug(String.format("Configuration is loaded as: playfieldsize=%d, firstplayerchar=%s, secondplayerchar=%s and computerchar=%s", config.getPlayfieldSize(), config.getFirstPlayerChar(), config.getSecondPlayerChar(), config.getComputerPlayerChar()));
         return config;
     }
 

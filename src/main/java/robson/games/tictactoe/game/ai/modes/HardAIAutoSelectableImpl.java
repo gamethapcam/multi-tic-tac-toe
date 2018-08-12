@@ -8,9 +8,9 @@ import robson.games.tictactoe.game.ai.rules.TakeAnEmptyPath;
 import robson.games.tictactoe.game.ai.rules.TakeTheBestPathForMe;
 import robson.games.tictactoe.game.ai.rules.TakeTheBestPathOfSomeoneElse;
 import robson.games.tictactoe.game.ai.rules.WinTheGame;
+import robson.games.tictactoe.model.Path;
 import robson.games.tictactoe.model.Player;
 import robson.games.tictactoe.model.Playfield;
-import robson.games.tictactoe.model.Path;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -32,7 +32,7 @@ public class HardAIAutoSelectableImpl implements AIAutoSelectable {
     @Override
     public void select(Player player, Playfield playfield) {
         List<Path> paths = playfield.getPaths();
-        for (Rule rule: rulesKnowledgeBase) {
+        for (Rule rule : rulesKnowledgeBase) {
             if (rule.executeSelection(player, paths)) {
                 break;
             }

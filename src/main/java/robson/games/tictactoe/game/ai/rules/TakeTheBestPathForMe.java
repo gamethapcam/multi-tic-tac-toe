@@ -2,8 +2,8 @@ package robson.games.tictactoe.game.ai.rules;
 
 import robson.games.tictactoe.game.ai.Rule;
 import robson.games.tictactoe.game.ai.rules.comparators.PathWithFewerFreeFieldsComparator;
-import robson.games.tictactoe.model.Player;
 import robson.games.tictactoe.model.Path;
+import robson.games.tictactoe.model.Player;
 
 import java.util.Collections;
 import java.util.List;

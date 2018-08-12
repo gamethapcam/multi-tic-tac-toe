@@ -22,7 +22,9 @@ public class Playfield {
         return this.fields;
     }
 
-    public List<Path> getPaths() { return this.paths; }
+    public List<Path> getPaths() {
+        return this.paths;
+    }
 
     public int getRows() {
         return this.rows;

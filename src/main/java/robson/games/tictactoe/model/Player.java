@@ -18,7 +18,9 @@ public class Player {
         return this.character;
     }
 
-    public boolean isHuman() { return this.human; }
+    public boolean isHuman() {
+        return this.human;
+    }
 
     @Override
     public boolean equals(Object o) {

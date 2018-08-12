@@ -2,7 +2,6 @@ package robson.games.tictactoe.game.ai.rules.comparators;
 
 import org.junit.Assert;
 import org.junit.Test;
-import robson.games.tictactoe.game.ai.rules.comparators.PathWithFewerFreeFieldsComparator;
 import robson.games.tictactoe.model.Field;
 import robson.games.tictactoe.model.Path;
 import robson.games.tictactoe.model.Player;
@@ -21,22 +20,22 @@ public class PathWithFewerFreeFieldsComparatorTest {
 
         Path pathA = new Path();
 
-        Field field = new Field();
+        Field field = new Field(0,0);
         field.assign(new Player('T'));
 
-        pathA.add(new Field());
-        pathA.add(new Field());
-        pathA.add(new Field());
+        pathA.add(new Field(0,0));
+        pathA.add(new Field(0,0));
+        pathA.add(new Field(0,0));
         paths.add(pathA);
 
         Path pathB = new Path();
-        pathB.add(new Field());
-        pathB.add(new Field());
+        pathB.add(new Field(0,0));
+        pathB.add(new Field(0,0));
         pathB.add(field);
         paths.add(pathB);
 
         Path pathC = new Path();
-        pathC.add(new Field());
+        pathC.add(new Field(0,0));
         pathC.add(field);
         pathC.add(field);
         paths.add(pathC);

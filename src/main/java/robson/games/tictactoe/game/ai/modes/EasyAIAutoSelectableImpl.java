@@ -22,7 +22,7 @@ public class EasyAIAutoSelectableImpl implements AIAutoSelectable {
     @Override
     public void select(Player player, Playfield playfield) {
         List<Path> paths = playfield.getPaths();
-        for (Rule rule: rulesKnowledgeBase) {
+        for (Rule rule : rulesKnowledgeBase) {
             if (rule.executeSelection(player, paths)) {
                 break;
             }

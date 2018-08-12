@@ -16,6 +16,6 @@ dependencies {
 
 mainClassName = "robson.games.tictactoe.ui.TicTacToe"
 
-run{
+run {
     standardInput = System.in
 }

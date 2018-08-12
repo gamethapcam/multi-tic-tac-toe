@@ -2,12 +2,11 @@ package robson.games.tictactoe.ui;
 
 import robson.games.tictactoe.utils.NumberUtils;
 
-public class InputValue {
+class InputValue {
 
-    public static final String INPUT_SPLIT_CHARACTER = ",";
+    private static final String INPUT_SPLIT_CHARACTER = ",";
 
-    public static final int INPUT_ARGUMENTS_SIZE = 2;
-
+    private static final int INPUT_ARGUMENTS_SIZE = 2;
 
     private String input;
 
@@ -17,7 +16,7 @@ public class InputValue {
 
     private int columnValue;
 
-    public InputValue(String input) {
+    InputValue(String input) {
         this.input = input;
         eval();
     }
@@ -27,7 +26,7 @@ public class InputValue {
             this.valid = false;
             return;
         }
-        String [] values = this.input.split(INPUT_SPLIT_CHARACTER);
+        String[] values = this.input.split(INPUT_SPLIT_CHARACTER);
 
         if (values.length != INPUT_ARGUMENTS_SIZE) {
             this.valid = false;
@@ -44,15 +43,15 @@ public class InputValue {
         this.valid = true;
     }
 
-    public int getLineValue() {
+    int getLineValue() {
         return this.lineValue;
     }
 
-    public int getColumnValue() {
+    int getColumnValue() {
         return this.columnValue;
     }
 
-    public boolean isValid() {
+    boolean isValid() {
         return this.valid;
     }
 }
