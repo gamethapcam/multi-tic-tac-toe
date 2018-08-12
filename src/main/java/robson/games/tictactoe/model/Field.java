@@ -1,6 +1,6 @@
-package robson.games.tictactoe.game;
+package robson.games.tictactoe.model;
 
-public class BoardPiece {
+public class Field {
     private Player assigned;
 
     public void assign(Player player) {
