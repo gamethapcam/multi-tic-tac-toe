@@ -2,7 +2,7 @@ package robson.games.tictactoe.game;
 
 import robson.games.tictactoe.game.exception.UnableToContinueException;
 
-public class RulesChecker {
+public class ValidationChecker {
 
     private static final int MAX_PLAYFIELD_SIZE = 10;
     private static final int MIN_PLAYFIELD_SIZE = 3;

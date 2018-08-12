@@ -22,6 +22,8 @@ public class Playfield {
         return this.fields;
     }
 
+    public List<Slice> getSlices() { return this.slices; }
+
     public int getRows() {
         return this.rows;
     }

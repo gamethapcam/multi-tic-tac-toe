@@ -1,7 +1,8 @@
 package robson.games.tictactoe.ui;
 
+import robson.games.tictactoe.game.ai.AIEngine;
 import robson.games.tictactoe.game.PlayersManager;
-import robson.games.tictactoe.game.RulesChecker;
+import robson.games.tictactoe.game.ValidationChecker;
 import robson.games.tictactoe.io.Config;
 import robson.games.tictactoe.io.ConfigurationReader;
 import robson.games.tictactoe.model.Player;
@@ -17,6 +18,8 @@ public class TicTacToe {
     private ConfigurationReader configurationReader = new ConfigurationReader();
 
     private PlayersManager playersManager = new PlayersManager();
+
+    private AIEngine aiEngine = new AIEngine();
 
 
     public void play(String args[]) {
@@ -70,14 +73,14 @@ public class TicTacToe {
                         playfield.select(player, inputValue.getLineValue(), inputValue.getColumnValue());
 
                     } else {
-                        //applies the IA
+                        aiEngine.select(player, playfield);
                     }
 
                     print(playfield);
                     if (playfield.isOver()) {
                         //check the result and show it off
                         if (playfield.hasWinner()) {
-                            Printer.info(String.format("Congratulations player %s, you win!", playfield.getWinner().getCharacter()));
+                            Printer.info(String.format("Congratulations player %s, you win! \\o/", playfield.getWinner().getCharacter()));
                         } else {
                             assert (playfield.isDraw());
                             Printer.info("Game is draw :(");
@@ -98,7 +101,7 @@ public class TicTacToe {
         Config config = Config.defaultConfiguration();
         if (args.length > 1 && "--config".equals(args[0])) {
             config = configurationReader.fromFile(args[1]);
-            RulesChecker.validatePlayfieldSize(config.getPlayfieldSize());
+            ValidationChecker.validatePlayfieldSize(config.getPlayfieldSize());
         } else {
             Printer.warn("No configuration file provided. Assuming default values.");
         }
