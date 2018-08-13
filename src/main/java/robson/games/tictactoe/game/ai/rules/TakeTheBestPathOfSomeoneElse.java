@@ -13,7 +13,7 @@ public class TakeTheBestPathOfSomeoneElse implements Rule {
 
     @Override
     public boolean executeSelection(Player player, List<Path> paths) {
-        Collections.sort(paths, new PathWithFewerFreeFieldsComparator());
+        paths.sort(new PathWithFewerFreeFieldsComparator());
         for (Path path : paths) {
             if (path.containsSamePlayerOnly() && path.countFreeFields() > 0) {
                 path.getFirstFreeField().assign(player);

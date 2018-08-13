@@ -10,10 +10,10 @@ import java.util.Properties;
 
 public class ConfigurationReader {
 
-    public static final String PLAYFIELD_SIZE = "playfield.size";
-    public static final String PLAYFIELD_PLAYERS_FIRST_CHAR = "playfield.players.first.char";
-    public static final String PLAYFIELD_PLAYERS_SECOND_CHAR = "playfield.players.second.char";
-    public static final String PLAYFIELD_PLAYERS_COMPUTER_CHAR = "playfield.players.computer.char";
+    private static final String PLAYFIELD_SIZE = "playfield.size";
+    private static final String PLAYFIELD_PLAYERS_FIRST_CHAR = "playfield.players.first.char";
+    private static final String PLAYFIELD_PLAYERS_SECOND_CHAR = "playfield.players.second.char";
+    private static final String PLAYFIELD_PLAYERS_COMPUTER_CHAR = "playfield.players.computer.char";
 
     public Config fromFile(String file) throws IOException {
         Properties prop = new Properties();

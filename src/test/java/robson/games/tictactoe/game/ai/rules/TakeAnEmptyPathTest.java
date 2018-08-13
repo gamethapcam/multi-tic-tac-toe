@@ -11,7 +11,7 @@ import java.util.List;
 
 public class TakeAnEmptyPathTest {
 
-    private TakeAnEmptyPath takeAnEmptyPath = new TakeAnEmptyPath();
+    private final TakeAnEmptyPath takeAnEmptyPath = new TakeAnEmptyPath();
 
     @Test
     public void shouldTakeAnEmptyPath() {

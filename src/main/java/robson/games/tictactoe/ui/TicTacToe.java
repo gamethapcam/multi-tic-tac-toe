@@ -17,11 +17,11 @@ import java.util.Scanner;
 
 public class TicTacToe {
 
-    private ConfigurationReader configurationReader = new ConfigurationReader();
+    private final ConfigurationReader configurationReader = new ConfigurationReader();
 
-    private PlayersManager playersManager = new PlayersManager();
+    private final PlayersManager playersManager = new PlayersManager();
 
-    private AIAutoSelectable aiMode = Mode.HARD.getInstance();
+    private final AIAutoSelectable aiMode = Mode.HARD.getInstance();
 
 
     public void play(String args[]) {

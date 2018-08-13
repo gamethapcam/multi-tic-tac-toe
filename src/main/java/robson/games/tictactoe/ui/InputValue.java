@@ -8,7 +8,7 @@ class InputValue {
 
     private static final int INPUT_ARGUMENTS_SIZE = 2;
 
-    private String input;
+    private final String input;
 
     private boolean valid;
 

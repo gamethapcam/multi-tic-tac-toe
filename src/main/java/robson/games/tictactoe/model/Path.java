@@ -6,7 +6,7 @@ import java.util.List;
 
 public class Path {
 
-    private List<Field> fields;
+    private final List<Field> fields;
 
     public Path() {
         this.fields = new ArrayList<>();

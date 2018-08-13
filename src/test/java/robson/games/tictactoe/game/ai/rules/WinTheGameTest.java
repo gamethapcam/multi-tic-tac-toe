@@ -11,7 +11,7 @@ import java.util.List;
 
 public class WinTheGameTest {
 
-    private WinTheGame winTheGame = new WinTheGame();
+    private final WinTheGame winTheGame = new WinTheGame();
 
     @Test
     public void shouldntChangeIfPlayerIsntReadyToWin() {

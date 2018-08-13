@@ -12,7 +12,7 @@ public class TakeTheBestPathForMe implements Rule {
 
     @Override
     public boolean executeSelection(Player player, List<Path> paths) {
-        Collections.sort(paths, new PathWithFewerFreeFieldsComparator());
+        paths.sort(new PathWithFewerFreeFieldsComparator());
         for (Path path : paths) {
             if (path.containsOnly(player) && path.countFreeFields() > 0) {
                 path.getFirstFreeField().assign(player);

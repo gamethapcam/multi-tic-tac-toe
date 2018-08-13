@@ -15,7 +15,7 @@ public class Playfield {
         this.rows = rows;
         this.columns = columns;
         this.reset();
-        this.resetAllPossiblePaths();
+        this.resetPaths();
     }
 
     public Field[][] getFields() {
@@ -44,8 +44,10 @@ public class Playfield {
     }
 
     public void select(Player player, int row, int column) {
-        if (!fields[row][column].isAssigned()) {
-            fields[row][column].assign(player);
+        if (isFieldAvailable(row, column)) {
+            if (!fields[row][column].isAssigned()) {
+                fields[row][column].assign(player);
+            }
         }
     }
 
@@ -57,7 +59,7 @@ public class Playfield {
         return result;
     }
 
-    private void resetAllPossiblePaths() {
+    private void resetPaths() {
         this.paths = new ArrayList<>();
         List<Path> rowPaths = initializeListOfValidPaths(this.rows);
         List<Path> columnPaths = initializeListOfValidPaths(this.columns);

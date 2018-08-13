@@ -10,7 +10,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class TakeTheBestPathOfSomeoneElseTest {
-    private TakeTheBestPathOfSomeoneElse takeTheBestPathOfSomeoneElse = new TakeTheBestPathOfSomeoneElse();
+    private final TakeTheBestPathOfSomeoneElse takeTheBestPathOfSomeoneElse = new TakeTheBestPathOfSomeoneElse();
 
     @Test
     public void shouldTakeTheBestPathOfSomeoneElse() {

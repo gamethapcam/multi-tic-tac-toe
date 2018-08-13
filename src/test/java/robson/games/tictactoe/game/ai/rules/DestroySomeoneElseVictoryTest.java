@@ -11,7 +11,7 @@ import java.util.List;
 
 public class DestroySomeoneElseVictoryTest {
 
-    private DestroySomeoneElseVictory destroySomeoneElseVictory = new DestroySomeoneElseVictory();
+    private final DestroySomeoneElseVictory destroySomeoneElseVictory = new DestroySomeoneElseVictory();
 
     @Test
     public void shouldChangeIfPathIsReadyToTheVictory() {

@@ -1,8 +1,8 @@
 package robson.games.tictactoe.model;
 
 public class Player {
-    private Character character;
-    private boolean human;
+    private final Character character;
+    private final boolean human;
 
     public Player(Character character) {
         this.character = character;

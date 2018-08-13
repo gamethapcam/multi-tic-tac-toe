@@ -10,7 +10,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class TakeTheBestPathForMeTest {
-    private TakeTheBestPathForMe takeTheBestPathForMe = new TakeTheBestPathForMe();
+    private final TakeTheBestPathForMe takeTheBestPathForMe = new TakeTheBestPathForMe();
 
     @Test
     public void shouldTakeTheBestPathForMe() {

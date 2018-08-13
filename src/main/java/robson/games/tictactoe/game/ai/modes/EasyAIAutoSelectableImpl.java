@@ -12,7 +12,7 @@ import java.util.List;
 
 public class EasyAIAutoSelectableImpl implements AIAutoSelectable {
 
-    private List<Rule> rulesKnowledgeBase;
+    private final List<Rule> rulesKnowledgeBase;
 
     public EasyAIAutoSelectableImpl() {
         this.rulesKnowledgeBase = new ArrayList<>();

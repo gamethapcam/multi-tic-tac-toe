@@ -2,14 +2,14 @@ package robson.games.tictactoe.io;
 
 public class Config {
 
-    public static final int PLAYFIELD_SIZE = 3;
-    public static final char FIRST_PLAYER_CHAR = 'O';
-    public static final char SECOND_PLAYER_CHAR = 'X';
-    public static final char COMPUTER_PLAYER_CHAR = 'R';
-    private Integer playfieldSize;
-    private Character firstPlayerChar;
-    private Character secondPlayerChar;
-    private Character computerPlayerChar;
+    private static final int PLAYFIELD_SIZE = 3;
+    private static final char FIRST_PLAYER_CHAR = 'O';
+    private static final char SECOND_PLAYER_CHAR = 'X';
+    private static final char COMPUTER_PLAYER_CHAR = 'R';
+    private final Integer playfieldSize;
+    private final Character firstPlayerChar;
+    private final Character secondPlayerChar;
+    private final Character computerPlayerChar;
 
     public Config(Integer playfieldSize, Character firstPlayerChar, Character secondPlayerChar, Character computerPlayerChar) {
         this.playfieldSize = playfieldSize;

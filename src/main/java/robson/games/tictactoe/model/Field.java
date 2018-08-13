@@ -2,9 +2,9 @@ package robson.games.tictactoe.model;
 
 public class Field {
 
-    private int column;
+    private final int column;
 
-    private int row;
+    private final int row;
 
     public Field(int column, int row) {
         this.column = column;

@@ -12,7 +12,7 @@ import java.util.List;
 
 public class PathWithFewerFreeFieldsComparatorTest {
 
-    private PathWithFewerFreeFieldsComparator pathWithFewerFreeFieldsComparator = new PathWithFewerFreeFieldsComparator();
+    private final PathWithFewerFreeFieldsComparator pathWithFewerFreeFieldsComparator = new PathWithFewerFreeFieldsComparator();
 
     @Test
     public void shouldSortByFewerFreeFieldsWithFreeFields() {
@@ -48,7 +48,7 @@ public class PathWithFewerFreeFieldsComparatorTest {
         paths.add(pathD);
 
 
-        Collections.sort(paths, pathWithFewerFreeFieldsComparator);
+        paths.sort(pathWithFewerFreeFieldsComparator);
 
         Assert.assertSame(pathC, paths.get(0));
         Assert.assertSame(pathB, paths.get(1));

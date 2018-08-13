@@ -17,7 +17,7 @@ import java.util.List;
 
 public class HardAIAutoSelectableImpl implements AIAutoSelectable {
 
-    private List<Rule> rulesKnowledgeBase;
+    private final List<Rule> rulesKnowledgeBase;
 
     public HardAIAutoSelectableImpl() {
         this.rulesKnowledgeBase = new ArrayList<>();

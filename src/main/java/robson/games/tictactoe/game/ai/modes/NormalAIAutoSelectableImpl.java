@@ -16,7 +16,7 @@ import java.util.List;
 
 public class NormalAIAutoSelectableImpl implements AIAutoSelectable {
 
-    private List<Rule> rulesKnowledgeBase;
+    private final List<Rule> rulesKnowledgeBase;
 
     public NormalAIAutoSelectableImpl() {
         this.rulesKnowledgeBase = new ArrayList<>();

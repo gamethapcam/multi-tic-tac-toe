@@ -11,7 +11,7 @@ import java.util.List;
 
 public class TakeARandomFieldTest {
 
-    private TakeARandomField takeARandomField = new TakeARandomField();
+    private final TakeARandomField takeARandomField = new TakeARandomField();
 
     @Test
     public void shouldTakeARandomField() {
