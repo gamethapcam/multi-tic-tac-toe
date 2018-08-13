@@ -32,7 +32,7 @@ public class TakeAnEmptyPathTest {
     public void shouldntTakeANonEmptyPath() {
         List<Path> paths = new ArrayList<>();
 
-        Field field = new Field(0,0);
+        Field field = new Field(0, 0);
         field.assign(new Player('T'));
         Path pathA = new Path();
 

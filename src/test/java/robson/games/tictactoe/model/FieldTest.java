@@ -7,7 +7,7 @@ public class FieldTest {
 
     @Test
     public void shouldControlItsAssignee() {
-        Field field = new Field(0,1);
+        Field field = new Field(0, 1);
         Assert.assertFalse(field.isAssigned());
         field.assign(new Player('X'));
         Assert.assertTrue(field.isAssigned());

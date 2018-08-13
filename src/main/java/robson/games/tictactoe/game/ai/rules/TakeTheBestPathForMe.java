@@ -5,7 +5,6 @@ import robson.games.tictactoe.game.ai.rules.comparators.PathWithFewerFreeFieldsC
 import robson.games.tictactoe.model.Path;
 import robson.games.tictactoe.model.Player;
 
-import java.util.Collections;
 import java.util.List;
 
 public class TakeTheBestPathForMe implements Rule {

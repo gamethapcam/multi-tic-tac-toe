@@ -17,7 +17,7 @@ public class DestroySomeoneElseVictoryTest {
     public void shouldChangeIfPathIsReadyToTheVictory() {
         List<Path> paths = new ArrayList<>();
 
-        Field field = new Field(0,0);
+        Field field = new Field(0, 0);
         field.assign(new Player('T'));
         Path pathA = new Path();
 
@@ -34,7 +34,7 @@ public class DestroySomeoneElseVictoryTest {
     public void shouldntChangeIfPathIsntReadyToTheVictory() {
         List<Path> paths = new ArrayList<>();
 
-        Field field = new Field(0,0);
+        Field field = new Field(0, 0);
         field.assign(new Player('T'));
         Path pathA = new Path();
 

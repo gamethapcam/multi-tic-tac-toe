@@ -23,6 +23,9 @@ public class TicTacToe {
 
     private final AIAutoSelectable aiMode = Mode.HARD.getInstance();
 
+    public static void main(String args[]) {
+        new TicTacToe().play(args);
+    }
 
     public void play(String args[]) {
         try {
@@ -116,9 +119,5 @@ public class TicTacToe {
             }
             System.out.println();
         }
-    }
-
-    public static void main(String args[]) {
-        new TicTacToe().play(args);
     }
 }

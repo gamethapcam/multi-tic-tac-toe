@@ -17,7 +17,7 @@ public class WinTheGameTest {
     public void shouldntChangeIfPlayerIsntReadyToWin() {
         List<Path> paths = new ArrayList<>();
 
-        Field field = new Field(0,0);
+        Field field = new Field(0, 0);
         field.assign(new Player('T'));
         Path pathA = new Path();
 
@@ -34,7 +34,7 @@ public class WinTheGameTest {
     public void shouldChangeIfPlayerIsReadyToWin() {
         List<Path> paths = new ArrayList<>();
 
-        Field field = new Field(0,0);
+        Field field = new Field(0, 0);
         field.assign(new Player('T'));
         Path pathA = new Path();
 

@@ -18,6 +18,10 @@ public class Config {
         this.computerPlayerChar = computerPlayerChar;
     }
 
+    public static Config defaultConfiguration() {
+        return new Config(PLAYFIELD_SIZE, FIRST_PLAYER_CHAR, SECOND_PLAYER_CHAR, COMPUTER_PLAYER_CHAR);
+    }
+
     public Integer getPlayfieldSize() {
         return playfieldSize;
     }
@@ -32,9 +36,5 @@ public class Config {
 
     public Character getComputerPlayerChar() {
         return computerPlayerChar;
-    }
-
-    public static Config defaultConfiguration() {
-        return new Config(PLAYFIELD_SIZE, FIRST_PLAYER_CHAR, SECOND_PLAYER_CHAR, COMPUTER_PLAYER_CHAR);
     }
 }

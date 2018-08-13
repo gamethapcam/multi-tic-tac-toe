@@ -6,7 +6,6 @@ import robson.games.tictactoe.io.Printer;
 import robson.games.tictactoe.model.Path;
 import robson.games.tictactoe.model.Player;
 
-import java.util.Collections;
 import java.util.List;
 
 public class TakeTheBestPathOfSomeoneElse implements Rule {

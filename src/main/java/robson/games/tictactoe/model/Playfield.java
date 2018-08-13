@@ -5,11 +5,10 @@ import java.util.List;
 
 public class Playfield {
 
-    private Field[][] fields;
-    private List<Path> paths;
-
     private final int rows;
     private final int columns;
+    private Field[][] fields;
+    private List<Path> paths;
 
     public Playfield(int rows, int columns) {
         this.rows = rows;
