@@ -21,7 +21,7 @@ public class PlayfieldTest {
     }
 
     @Test
-    public void shouldAssignAPlayerToFreeAField() {
+    public void shouldAssignAPlayerToFreeField() {
         Playfield playfield = new Playfield(3, 3);
         playfield.select(new Player('X'), 0,1);
         Assert.assertEquals(new Player('X'), playfield.getFields()[0][1].getAssigned());
